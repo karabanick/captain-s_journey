@@ -8,7 +8,7 @@ body{
   background: #080707; /*This is the webpage background color */
   color: #fff;
 }
-
+/* -----------------------------header----------------------------*/
 /* when styling an ~id~ (in this case, the header section (id in the html section), include a '#' at the beginning. For this part, the id section is in the ~div~ */
 #header{
   width: 100%;
@@ -78,4 +78,61 @@ NOTE: when formating a class, use .notation (eg, logo) In this case, 'header-tex
 /*to format the name 'Nick' contained between <span>*/
 .header-text h1 span{
   color:#ff004f;
+}
+
+/* -----------------------------------about--------------------------------------*/
+#about{
+  padding: 80px 0;
+  color: #ababab;
+}
+/* to format the row section of the page, */
+.row{
+  display: flex; /* to get the contents side by side */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* to format contents of column 1 and column 2 */
+.about-col-1{
+  flex-basis: 35%;
+}
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2{
+  flex-basis: 60%; /* this column is a bit larger to give more room for text. compared to the first column which only has an image, hence a smaller size of 35% flex basis. */
+}
+/*to format the text 'About me' */
+.sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+/*to format the tabs added below the 'About me' section */
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+/*to format the specific tab links (class-tablinks) */
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+/*to add some animation effects to the tablinks, for example an underline */
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+/*to edit the 'active link' added to the html file*/
+.tab-links.active-link::after{/* notice in this line of code, there is no space between 'tab-links and active-link. Instead, there is a '.' */
+  width: 50%;
 }

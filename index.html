@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--the 'header' div-->
+    <!---------------------------the 'header' div------------------------->
     <div id="header"> <!-- ~div, id, class~ -->
         <!--this container contains the logo, nav menu,-->
         <div class="container">
@@ -24,9 +24,32 @@
             <!--to add some text to the header part of the home screen-->
             <div class="header-text">
                 <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Nick.</span><br> Welcome to my webpage!!</h1> <!-- ~span~ -->
+                <h1>Hi, I'm <span>Nick.</span><br> Welcome to my website!!</h1> <!-- ~span~ -->
             </div>
         </div>
     </div>
+
+    <!-------------------------'about' div------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row"> <!-- to add a row with two columns, column 1 and column 2-->
+                <div class="about-col-1">
+                    <img src="images/image3.png"> <!-- this code adds an image to the about me section and the text 'about me' below it-->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <!-- to add some text content to the about me (column 2)-->
+                    <p> The seas may be rough but I am the Captain!<br>No matter how difficult, I will always prevail.</p>
+                    <p>The only rules that matter are these:<br>What a man can do and what a man can't do..<br>~~Captain Jack Sparrow~~</p>
+                    <!--to create some tabs under the text in the about me section, -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">Skills</p> <!--the 'active link' was added when adding an animation effect in css-->
+                        <p class="tab-links">Experience</p>
+                        <p class="tab-links">Education</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
 </body>
 </html>
